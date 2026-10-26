@@ -20,6 +20,17 @@ cd android
 ./gradlew testDebugUnitTest assembleDebug
 ```
 
+## Amiga
+
+A Workbench 1.3 client for any Amiga from a 68000 A500 up is under
+[`amiga/`](amiga/README.md). It plays campaigns against the computer, and
+server games with the mobile players through FujiNet NIO. Build it with
+bebbo's m68k-amigaos-gcc:
+
+```sh
+make -C amiga
+```
+
 ## Server
 
 The Go/SQLite server under [`server/`](server/README.md) provides mobile pairing, profiles, lobbies, real-time and turn-based game records, pause/resume, leaderboards, administration, and QR-based configuration.
