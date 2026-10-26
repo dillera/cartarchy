@@ -1,0 +1,25 @@
+[Unit]
+Description=Cartarchy Game Server
+Documentation=https://github.com/dillera/cartarchy
+After=network.target
+
+[Service]
+Type=simple
+User=dillera
+WorkingDirectory=/home/dillera/_services/cartarchy
+EnvironmentFile=/home/dillera/_services/cartarchy/cartarchy.env
+ExecStart=/home/dillera/_services/cartarchy/cartarchy-server
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=cartarchy-server
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/home/dillera/_services/cartarchy/data
+
+[Install]
+WantedBy=multi-user.target

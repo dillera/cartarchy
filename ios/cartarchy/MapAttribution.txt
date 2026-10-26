@@ -1,0 +1,12 @@
+MAP GEOMETRY ATTRIBUTION
+
+Cartarchy's territory geometry is adapted from “Risk board.svg” by Gr0gmint:
+https://commons.wikimedia.org/wiki/File:Risk_board.svg
+
+Licensed under Creative Commons Attribution-ShareAlike 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Changes: the 42 named territory paths were extracted, renamed to Cartarchy's
+model identifiers, transformed for mobile layouts, and rendered with
+original monochrome styling and interactions. The adapted geometry remains
+available under CC BY-SA 3.0.

@@ -1,0 +1,16 @@
+# Append to ~/_services/frpc/frpc.toml on the deploy host, then restart frpc.
+# DNS: cartarchy.diller.org CNAME qix.diller.org (the frps edge).
+
+# Plain HTTP: ACME challenges and the redirect to HTTPS (nginx-acme.conf).
+[[proxies]]
+name		= "cartarchy http"
+type		= "http"
+localPort	= 8902
+customDomains	= ["cartarchy.diller.org"]
+
+# HTTPS: frps routes by SNI and passes TLS through to nginx (nginx-tls.conf).
+[[proxies]]
+name		= "cartarchy https"
+type		= "https"
+localPort	= 8943
+customDomains	= ["cartarchy.diller.org"]

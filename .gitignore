@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+server/coverage.out
+server/data/
+android/.gradle/
+android/.kotlin/
+android/local.properties
+android/app/build/
+android/build/
